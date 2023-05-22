@@ -5,10 +5,10 @@ import { BsCart3 } from "react-icons/bs";
 function Header() {
   return (
     <div className="header-container">
-        <h1>Fake Store</h1>
+        <a href='/'><h1>Fake Store</h1></a>
         <div className="cart-container">
           <p>1</p>
-          <BsCart3 className="cart-icon"/>
+          <a href='/cart'><BsCart3 className="cart-icon"/></a>
         </div>
     </div>
   )

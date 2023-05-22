@@ -1,19 +1,27 @@
 import { useState } from 'react'
 import Header from './components/Header/Header'
 import './App.css'
-import Homepage from './components/Homepage/Homepage'
+import Homepage from './pages/Homepage/Homepage'
 import Footer from './components/Footer/Footer'
+import Cart from './pages/Cart/Cart'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function App() {
   
 
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Homepage />
+
+      <Routes>
+      <Route path='/' element={<Homepage/>} />
+      <Route path='/cart' element={<Cart/>} />
+      </Routes>
+
       <Footer />
 
-    </div>
+    </BrowserRouter>
   )
 }
 
