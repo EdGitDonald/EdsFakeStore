@@ -1,0 +1,18 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--appBlue);  
+}
+
+.footer-container p {
+    background-color: var(--appBlue);
+    color: white;
+}
+
+.heart-icon{
+    
+    
+}

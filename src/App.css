@@ -1,10 +1,20 @@
+:root{
+  --appBlue: #3a4895;
+  --backCol:  #fafafa;
+  --bordcol: #efefef;
+}
 
 *{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: var(--appBlue);
+  background-color: var(--backCol);
+  
 }
 
 a{
   text-decoration: none;
 }
+
+

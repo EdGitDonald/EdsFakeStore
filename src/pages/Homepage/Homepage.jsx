@@ -34,7 +34,6 @@ function Homepage() {
                 setCategories(res.data)
             })
             .catch(err => console.log(err))
-
         }, [] //empty array means run once is important
     )
 
@@ -48,7 +47,6 @@ const filterCategorie = (categorie) =>{
         //what to do with this data
         //change what is on homepage
         setProducts(res.data)
-    
     })
     .catch(err => console.log(err))
     //line below needs api call made to change categories
@@ -70,13 +68,12 @@ const filterCategorie = (categorie) =>{
   return (
     <div className="home-container">
         <form className="categorie-container">
-            <p onClick={showAllProducts}>All</p>
+            <p style={{marginRight:"20px"}} onClick={showAllProducts}>All</p>
             {
-         categories.map(item=><p key={item.id} onClick={()=>filterCategorie(item)}>{item}</p>)
+         categories.map(item=><p style={{marginRight:"20px"}} key={item.id} onClick={()=>filterCategorie(item)}>{item}</p>)
          // onClick={()=>changeCategorie(item)}
             }
         </form>
-
         <div className="products-container">
             {
                 products.map(item =><ProductCard key={item.id}

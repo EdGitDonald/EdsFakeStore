@@ -5,9 +5,9 @@ function ProductCard({product}) {
   return (
     <div className="product-card">
         <img src={product.image} />
-        <a href="#">{product.title}</a>
+        <p>{product.title}</p>
         <p>{product.category}</p>
-        <p>£{product.price}</p>
+        <p>{product.price}€</p>
     </div>
   )
 }
