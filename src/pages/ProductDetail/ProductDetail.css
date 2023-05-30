@@ -1,0 +1,28 @@
+.centering{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.productDet-container{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 150px 250px;
+    border: 1px red solid;
+}
+
+.productDet-container img{
+    width: 60%;
+    padding: 110px;
+   
+}
+
+.text-container{
+    text-align: left;
+    padding-right: 80px;
+}
+
+.text-container p{
+    margin-top: 10px;
+}
