@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <p>Made with <BsHeart className="heart-icon"/> by mimo </p>
-      <p>Contact Us</p>
+      <a href='/contactus'>Contact Us</a>
     </div>
   )
 }

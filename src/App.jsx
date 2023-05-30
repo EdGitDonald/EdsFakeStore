@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage'
 import Footer from './components/Footer/Footer'
 import Cart from './pages/Cart/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
       <Route path='/' element={<Homepage/>} />
       <Route path='/cart' element={<Cart/>} />
+      <Route path='/contactus' element={<ContactUs/>}/>
       </Routes>
 
       <Footer />
