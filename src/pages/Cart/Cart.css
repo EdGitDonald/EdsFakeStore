@@ -1,0 +1,9 @@
+
+.favorite-container{
+    min-height: 90vh;
+}
+.favorite-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import {Link} from 'react-router-dom'
 import { BsCart3 } from "react-icons/bs";
 //BsCart3
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
         <a href='/'><h1>Fake Store</h1></a>
         <div className="cart-container">
           <p>1</p>
-          <a href='/cart'><BsCart3 className="cart-icon"/></a>
+          <Link to='/cart'><BsCart3 className="cart-icon"/></Link>
         </div>
     </div>
   )

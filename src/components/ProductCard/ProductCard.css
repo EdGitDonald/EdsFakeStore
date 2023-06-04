@@ -9,6 +9,7 @@
     border-radius:8px;
     padding: 16px 16px 16px 16px;
     background-color: white;
+    position: relative;
 }
 
 .product-card img{
@@ -29,4 +30,10 @@
 
 .product-card :nth-child(3){
     color: #949494;
+}
+
+.heart-icon{
+    position:absolute;
+    right: 25px;
+    top: 25px;
 }
