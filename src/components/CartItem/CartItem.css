@@ -1,0 +1,24 @@
+
+
+.cart-card{
+    
+    display: flex;
+    height: 145px;
+    width: 50%;
+    align-content: left;
+    justify-content: space-between;
+    border: red 1px solid;
+   
+   
+
+    
+}
+
+.cart-card img{
+    height: 100%;
+  
+}
+
+.cart-card p{
+    text-align: left;
+}
