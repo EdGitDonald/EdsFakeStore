@@ -26,6 +26,16 @@
 
 .contact-container p, input, button{
     margin-top: 20px;
+    border: none;
+}
+
+.contact-container button{
+    margin-top: 10%;
+    background-color: #5264C3;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 35%;
 }
 
 .contact-container p{

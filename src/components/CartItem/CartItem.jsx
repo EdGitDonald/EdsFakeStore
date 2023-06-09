@@ -13,13 +13,15 @@ function CartItem({product}) {
 
   return (
     <div className="cart-card">
+        <div className='cart-img align'>
         <img src={product.image} />
+        </div>
         
-        <Link to={`/details/${product.id}`}>{product.title}</Link>
-        <p>{product.price}€</p>
-        <p>1</p>
+        <Link to={`/details/${product.id}`} className='twenty-percent color align'>{product.title}</Link>
+        <p className=' twenty-percent color align'>{product.price}€</p>
+        <p className=' twenty-percent color align'>1</p>
         {
-          <BsTrash className='bin-icon' onClick={()=> removeProduct(product.id)}/>
+          <BsTrash className='bin-icon color twenty-percent ' onClick={()=> removeProduct(product.id)}/>
         }
         
     </div>

@@ -13,20 +13,19 @@ function ProductCard({product}) {
   const [isFavorite, setIsFavorite] = React.useState(false)
 
   React.useEffect(
-    () => {
+    ()=> {
       //  console.log('update')
       //is this product in favorites?
       setIsFavorite(favorites.find(item => item.id === product.id))
       //not found is undefined which is "falsy"
 
-
-    }, [favorites]
+    },[favorites]
   )
 
   return (
     <div className="product-card">
         <img src={product.image} />
-        <Link to={`/details/${product.id}`}>{product.title}</Link>
+        <Link to={`/details/${product.id}`} className='title-css'>{product.title}</Link>
         <p>{product.category}</p>
         <p>{product.price}€</p>
         {

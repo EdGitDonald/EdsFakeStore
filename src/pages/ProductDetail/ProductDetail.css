@@ -1,28 +1,112 @@
-.centering{
+.detail-page{
+    width: 70%;
     display: flex;
-    justify-content: center;
+   justify-content: center;
+    background-color: white;
+    margin: 10% 20%;
+    padding: 15% 0%;
     
 }
 
 .productDet-container{
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin: 150px 250px;
-    border: 1px red solid;
+    width:90%;
+    margin: 10%;
+    
 }
 
-.productDet-container img{
-    width: 60%;
-    padding: 110px;
-   
+.prod-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.prod-price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.prod-des-t{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.prod-des{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.fifty-percent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.detail-img{
+    width: 80%;
+    margin: 10%
+}
+
+.detail-img img{
+    max-width: 100%;
+    height: auto; 
+    display: flex;
+}
+
+.productDet-container{
+    display: flex;
 }
 
 .text-container{
-    text-align: left;
-    padding-right: 80px;
+    padding-left: 5px;
 }
 
 .text-container p{
-    margin-top: 10px;
+    padding-top: 10px;
+    color: black;
+    background-color: white;
 }
+
+.addToCart-btn{
+    margin-top: 10px;
+    width: 50%;
+    height: 30px;
+    background-color: #FFD814;
+    color: black;
+    border: none;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .productDet-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:90%;
+        background-color: white;
+        
+    }
+
+    .fifty-percent{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+    }
+
+
+.addToCart-btn{
+    margin-top: 20px;
+    width: 70%;
+    height: 30px;
+    background-color: #FFD814;
+    color: black;
+    border: none;
+    margin-left: 20%;
+  }
+    
+  }
