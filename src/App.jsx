@@ -12,7 +12,6 @@ import FavoritesContextProvider from './contexts/FavoritesContext'
 
 function App() {
   
-
   return (
     <BrowserRouter>
      <FavoritesContextProvider>
